@@ -1,0 +1,191 @@
+config: configs/pdm_celeba_attribute.yaml
+num_conditions: 100                                 # First N rows; seed = base seed + row index
+output_dir: outputs/pdm_sweep
+
+inference_common:
+  num_updates: 100000
+  fallback_f_only: true
+  warp_beta: 0.2
+  direct_warp: false
+cs_vgb:
+  persistence: 1.0
+  lazy: true
+  skip_stays: true
+  value_samples: 1
+  endpoint_mode: reuse
+
+# Target CelebA presets. Remove methods/budgets to run a subset.
+# Search at 4096 uses target L=8; the historical ICLR plot used L=4.
+methods:
+  search:
+    cs_vgb:
+      guided: false
+      guidance_forward: 0.0
+      guidance_backward: 0.0                        # Guided F+B; set 0.0 for F-only
+    presets:
+      64:
+        inference_common:
+          num_particles: 2
+          checkpoint_intervals: 2                     # J: uniform grid, clean 0 -> noise 1
+        cs_vgb:
+          forward_size: 2                            # L_F
+          backward_size: 2                           # L_B
+          depth_alpha: 0.3
+          endpoint_samples: 4                        # m_e (unguided)
+          guidance_samples: 1                        # m_g (guided)
+      128:
+        inference_common:
+          num_particles: 2
+          checkpoint_intervals: 4                     # J: uniform grid, clean 0 -> noise 1
+        cs_vgb:
+          forward_size: 4                            # L_F
+          backward_size: 4                           # L_B
+          depth_alpha: 0.3
+          endpoint_samples: 4                        # m_e (unguided)
+          guidance_samples: 1                        # m_g (guided)
+      256:
+        inference_common:
+          num_particles: 4
+          checkpoint_intervals: 4                     # J: uniform grid, clean 0 -> noise 1
+        cs_vgb:
+          forward_size: 8                            # L_F
+          backward_size: 8                           # L_B
+          depth_alpha: 0.3
+          endpoint_samples: 8                        # m_e (unguided)
+          guidance_samples: 1                        # m_g (guided)
+      512:
+        inference_common:
+          num_particles: 4
+          checkpoint_intervals: 8                     # J: uniform grid, clean 0 -> noise 1
+        cs_vgb:
+          forward_size: 4                            # L_F
+          backward_size: 4                           # L_B
+          depth_alpha: 0.3
+          endpoint_samples: 8                        # m_e (unguided)
+          guidance_samples: 1                        # m_g (guided)
+      1024:
+        inference_common:
+          num_particles: 8
+          checkpoint_intervals: 16                    # J: uniform grid, clean 0 -> noise 1
+        cs_vgb:
+          forward_size: 4                            # L_F
+          backward_size: 4                           # L_B
+          depth_alpha: 0.3
+          endpoint_samples: 4                        # m_e (unguided)
+          guidance_samples: 1                        # m_g (guided)
+      2048:
+        inference_common:
+          num_particles: 8
+          checkpoint_intervals: 8                     # J: uniform grid, clean 0 -> noise 1
+        cs_vgb:
+          forward_size: 8                            # L_F
+          backward_size: 8                           # L_B
+          depth_alpha: 0.3
+          endpoint_samples: 16                        # m_e (unguided)
+          guidance_samples: 1                        # m_g (guided)
+      4096:
+        inference_common:
+          num_particles: 8
+          checkpoint_intervals: 16                    # J: uniform grid, clean 0 -> noise 1
+        cs_vgb:
+          forward_size: 8                            # L_F
+          backward_size: 8                           # L_B
+          depth_alpha: 0.3
+          endpoint_samples: 8                        # m_e (unguided)
+          guidance_samples: 1                        # m_g (guided)
+      8192:
+        inference_common:
+          num_particles: 8
+          checkpoint_intervals: 16                    # J: uniform grid, clean 0 -> noise 1
+        cs_vgb:
+          forward_size: 8                            # L_F
+          backward_size: 8                           # L_B
+          depth_alpha: 0.3
+          endpoint_samples: 32                        # m_e (unguided)
+          guidance_samples: 1                        # m_g (guided)
+  guided:
+    cs_vgb:
+      guided: true
+      guidance_forward: 0.1
+      guidance_backward: 0.1                        # Guided F+B; set 0.0 for F-only
+    presets:
+      64:
+        inference_common:
+          num_particles: 1
+          checkpoint_intervals: 4                     # J: uniform grid, clean 0 -> noise 1
+        cs_vgb:
+          forward_size: 2                            # L_F
+          backward_size: 2                           # L_B
+          depth_alpha: 0.3
+          endpoint_samples: 8                        # m_e (unguided)
+          guidance_samples: 1                        # m_g (guided)
+      128:
+        inference_common:
+          num_particles: 1
+          checkpoint_intervals: 4                     # J: uniform grid, clean 0 -> noise 1
+        cs_vgb:
+          forward_size: 2                            # L_F
+          backward_size: 2                           # L_B
+          depth_alpha: 0.3
+          endpoint_samples: 8                        # m_e (unguided)
+          guidance_samples: 1                        # m_g (guided)
+      256:
+        inference_common:
+          num_particles: 1
+          checkpoint_intervals: 4                     # J: uniform grid, clean 0 -> noise 1
+        cs_vgb:
+          forward_size: 2                            # L_F
+          backward_size: 2                           # L_B
+          depth_alpha: 0.3
+          endpoint_samples: 8                        # m_e (unguided)
+          guidance_samples: 1                        # m_g (guided)
+      512:
+        inference_common:
+          num_particles: 1
+          checkpoint_intervals: 8                     # J: uniform grid, clean 0 -> noise 1
+        cs_vgb:
+          forward_size: 2                            # L_F
+          backward_size: 2                           # L_B
+          depth_alpha: 0.3
+          endpoint_samples: 8                        # m_e (unguided)
+          guidance_samples: 1                        # m_g (guided)
+      1024:
+        inference_common:
+          num_particles: 1
+          checkpoint_intervals: 16                    # J: uniform grid, clean 0 -> noise 1
+        cs_vgb:
+          forward_size: 2                            # L_F
+          backward_size: 2                           # L_B
+          depth_alpha: 0.3
+          endpoint_samples: 8                        # m_e (unguided)
+          guidance_samples: 2                        # m_g (guided)
+      2048:
+        inference_common:
+          num_particles: 1
+          checkpoint_intervals: 16                    # J: uniform grid, clean 0 -> noise 1
+        cs_vgb:
+          forward_size: 2                            # L_F
+          backward_size: 2                           # L_B
+          depth_alpha: 0.3
+          endpoint_samples: 8                        # m_e (unguided)
+          guidance_samples: 2                        # m_g (guided)
+      4096:
+        inference_common:
+          num_particles: 1
+          checkpoint_intervals: 32                    # J: uniform grid, clean 0 -> noise 1
+        cs_vgb:
+          forward_size: 2                            # L_F
+          backward_size: 2                           # L_B
+          depth_alpha: 0.3
+          endpoint_samples: 8                        # m_e (unguided)
+          guidance_samples: 4                        # m_g (guided)
+      8192:
+        inference_common:
+          num_particles: 1
+          checkpoint_intervals: 32                    # J: uniform grid, clean 0 -> noise 1
+        cs_vgb:
+          forward_size: 2                            # L_F
+          backward_size: 2                           # L_B
+          depth_alpha: 0.3
+          endpoint_samples: 8                        # m_e (unguided)
+          guidance_samples: 4                        # m_g (guided)

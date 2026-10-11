@@ -1,0 +1,100 @@
+{"class_id":980,"class_name":"volcano","constraint_type":"action","prompt":"majestic volcano erupting with lava flowing down its sides"}
+{"class_id":812,"class_name":"space shuttle","constraint_type":"action","prompt":"space shuttle launching into space, fiery fumes"}
+{"class_id":4,"class_name":"hammerhead","constraint_type":"object_interaction","prompt":"a hammerhead nudging a floating buoy with its snout"}
+{"class_id":6,"class_name":"stingray","constraint_type":"visual_state","prompt":"a stingray partially buried in pale sand"}
+{"class_id":8,"class_name":"hen","constraint_type":"surrounding_context","prompt":"a hen in a sunlit farmyard"}
+{"class_id":10,"class_name":"brambling","constraint_type":"spatial_relation","prompt":"a brambling perched on a frosted branch"}
+{"class_id":12,"class_name":"house finch","constraint_type":"object_interaction","prompt":"a house finch pulling a seed from a sunflower head"}
+{"class_id":14,"class_name":"indigo bunting","constraint_type":"visual_state","prompt":"an indigo bunting with rain-soaked plumage"}
+{"class_id":16,"class_name":"bulbul","constraint_type":"action","prompt":"a bulbul taking flight"}
+{"class_id":18,"class_name":"magpie","constraint_type":"surrounding_context","prompt":"a magpie in a rain-soaked city park"}
+{"class_id":20,"class_name":"water ouzel","constraint_type":"object_interaction","prompt":"a water ouzel turning over a stream pebble with its beak"}
+{"class_id":22,"class_name":"bald eagle","constraint_type":"visual_state","prompt":"a bald eagle with its wings fully spread"}
+{"class_id":24,"class_name":"great grey owl","constraint_type":"action","prompt":"a great grey owl gliding low"}
+{"class_id":26,"class_name":"common newt","constraint_type":"spatial_relation","prompt":"a common newt between moss-covered stones"}
+{"class_id":28,"class_name":"spotted salamander","constraint_type":"surrounding_context","prompt":"a spotted salamander on a damp forest floor"}
+{"class_id":30,"class_name":"bullfrog","constraint_type":"visual_state","prompt":"a bullfrog with its throat sac fully inflated"}
+{"class_id":32,"class_name":"tailed frog","constraint_type":"action","prompt":"a tailed frog leaping from the water"}
+{"class_id":34,"class_name":"leatherback turtle","constraint_type":"spatial_relation","prompt":"a leatherback turtle below the sunlit ocean surface"}
+{"class_id":36,"class_name":"terrapin","constraint_type":"object_interaction","prompt":"a terrapin biting an aquatic leaf"}
+{"class_id":38,"class_name":"banded gecko","constraint_type":"surrounding_context","prompt":"a banded gecko in a rocky desert enclosure"}
+{"class_id":40,"class_name":"American chameleon","constraint_type":"action","prompt":"an American chameleon climbing slowly"}
+{"class_id":42,"class_name":"agama","constraint_type":"spatial_relation","prompt":"an agama atop a sun-warmed rock"}
+{"class_id":44,"class_name":"alligator lizard","constraint_type":"object_interaction","prompt":"an alligator lizard gripping a twig"}
+{"class_id":46,"class_name":"green lizard","constraint_type":"visual_state","prompt":"a green lizard with dew-speckled scales"}
+{"class_id":48,"class_name":"Komodo dragon","constraint_type":"surrounding_context","prompt":"a Komodo dragon in a dry tropical savanna"}
+{"class_id":50,"class_name":"American alligator","constraint_type":"spatial_relation","prompt":"an American alligator beside a muddy riverbank"}
+{"class_id":52,"class_name":"thunder snake","constraint_type":"object_interaction","prompt":"a thunder snake nosing aside a dry leaf"}
+{"class_id":54,"class_name":"hognose snake","constraint_type":"visual_state","prompt":"a hognose snake with its neck flattened defensively"}
+{"class_id":56,"class_name":"king snake","constraint_type":"action","prompt":"a king snake crossing a sandy trail"}
+{"class_id":58,"class_name":"water snake","constraint_type":"surrounding_context","prompt":"a water snake in a reed-filled marsh"}
+{"class_id":60,"class_name":"night snake","constraint_type":"object_interaction","prompt":"a night snake curling around a fallen twig"}
+{"class_id":62,"class_name":"rock python","constraint_type":"visual_state","prompt":"a rock python with freshly shed glossy scales"}
+{"class_id":64,"class_name":"green mamba","constraint_type":"action","prompt":"a green mamba moving through branches"}
+{"class_id":66,"class_name":"horned viper","constraint_type":"spatial_relation","prompt":"a horned viper beneath a desert shrub"}
+{"class_id":68,"class_name":"sidewinder","constraint_type":"surrounding_context","prompt":"a sidewinder on a wind-rippled desert floor"}
+{"class_id":70,"class_name":"harvestman","constraint_type":"visual_state","prompt":"a harvestman with dew beaded along its legs"}
+{"class_id":72,"class_name":"black and gold garden spider","constraint_type":"action","prompt":"a black and gold garden spider descending on a silk thread"}
+{"class_id":74,"class_name":"garden spider","constraint_type":"spatial_relation","prompt":"a garden spider at the center of a dew-covered web"}
+{"class_id":76,"class_name":"tarantula","constraint_type":"object_interaction","prompt":"a tarantula touching a dry leaf with its front legs"}
+{"class_id":78,"class_name":"tick","constraint_type":"surrounding_context","prompt":"a tick on a veterinary examination tray"}
+{"class_id":80,"class_name":"black grouse","constraint_type":"action","prompt":"a black grouse launching into flight"}
+{"class_id":82,"class_name":"ruffed grouse","constraint_type":"spatial_relation","prompt":"a ruffed grouse beside a fallen log"}
+{"class_id":84,"class_name":"peacock","constraint_type":"object_interaction","prompt":"a peacock pecking at a fallen berry"}
+{"class_id":86,"class_name":"partridge","constraint_type":"visual_state","prompt":"a partridge with rain-ruffled feathers"}
+{"class_id":88,"class_name":"macaw","constraint_type":"surrounding_context","prompt":"a macaw in a lush rainforest canopy"}
+{"class_id":90,"class_name":"lorikeet","constraint_type":"spatial_relation","prompt":"a lorikeet perched beneath a palm frond"}
+{"class_id":92,"class_name":"bee eater","constraint_type":"object_interaction","prompt":"a bee eater tossing a captured insect in its beak"}
+{"class_id":94,"class_name":"hummingbird","constraint_type":"visual_state","prompt":"a hummingbird with iridescent throat feathers catching the light"}
+{"class_id":96,"class_name":"toucan","constraint_type":"action","prompt":"a toucan hopping along a branch"}
+{"class_id":98,"class_name":"red-breasted merganser","constraint_type":"surrounding_context","prompt":"a red-breasted merganser on a misty coastal lagoon"}
+{"class_id":100,"class_name":"black swan","constraint_type":"object_interaction","prompt":"a black swan pulling at submerged pondweed"}
+{"class_id":102,"class_name":"echidna","constraint_type":"visual_state","prompt":"an echidna with mud-coated spines"}
+{"class_id":104,"class_name":"wallaby","constraint_type":"action","prompt":"a wallaby bounding forward"}
+{"class_id":106,"class_name":"wombat","constraint_type":"spatial_relation","prompt":"a wombat at the entrance of an earthen burrow"}
+{"class_id":108,"class_name":"sea anemone","constraint_type":"surrounding_context","prompt":"a sea anemone in a shallow coral reef"}
+{"class_id":110,"class_name":"flatworm","constraint_type":"visual_state","prompt":"a flatworm with its body visibly rippled"}
+{"class_id":112,"class_name":"conch","constraint_type":"action","prompt":"a conch crawling across the seafloor"}
+{"class_id":114,"class_name":"slug","constraint_type":"spatial_relation","prompt":"a slug beneath a broad leaf"}
+{"class_id":116,"class_name":"chiton","constraint_type":"object_interaction","prompt":"a chiton clinging tightly to a wave-washed stone"}
+{"class_id":118,"class_name":"Dungeness crab","constraint_type":"surrounding_context","prompt":"a Dungeness crab in a rocky tidal pool"}
+{"class_id":120,"class_name":"fiddler crab","constraint_type":"action","prompt":"a fiddler crab scuttling sideways"}
+{"class_id":122,"class_name":"American lobster","constraint_type":"spatial_relation","prompt":"an American lobster inside a rocky crevice"}
+{"class_id":124,"class_name":"crayfish","constraint_type":"object_interaction","prompt":"a crayfish gripping a water plant with its claw"}
+{"class_id":126,"class_name":"isopod","constraint_type":"visual_state","prompt":"an isopod rolled into a tight ball"}
+{"class_id":128,"class_name":"black stork","constraint_type":"surrounding_context","prompt":"a black stork in a foggy wetland"}
+{"class_id":130,"class_name":"flamingo","constraint_type":"spatial_relation","prompt":"a flamingo among tall reeds"}
+{"class_id":132,"class_name":"American egret","constraint_type":"object_interaction","prompt":"an American egret lifting a twig from the water"}
+{"class_id":134,"class_name":"crane bird","constraint_type":"visual_state","prompt":"a crane bird with its wings outstretched"}
+{"class_id":136,"class_name":"European gallinule","constraint_type":"action","prompt":"a European gallinule stepping over floating leaves"}
+{"class_id":138,"class_name":"bustard","constraint_type":"surrounding_context","prompt":"a bustard on open steppe grassland"}
+{"class_id":140,"class_name":"red-backed sandpiper","constraint_type":"object_interaction","prompt":"a red-backed sandpiper probing wet sand with its beak"}
+{"class_id":142,"class_name":"dowitcher","constraint_type":"visual_state","prompt":"a dowitcher with rain-darkened feathers"}
+{"class_id":144,"class_name":"pelican","constraint_type":"action","prompt":"a pelican diving toward the water"}
+{"class_id":146,"class_name":"albatross","constraint_type":"spatial_relation","prompt":"an albatross above rolling waves"}
+{"class_id":148,"class_name":"killer whale","constraint_type":"surrounding_context","prompt":"a killer whale in a cold ocean channel"}
+{"class_id":150,"class_name":"sea lion","constraint_type":"visual_state","prompt":"a sea lion with wet whiskers glistening"}
+{"class_id":152,"class_name":"Japanese spaniel","constraint_type":"action","prompt":"a Japanese spaniel trotting forward"}
+{"class_id":154,"class_name":"Pekinese","constraint_type":"spatial_relation","prompt":"a Pekinese seated beside a velvet cushion"}
+{"class_id":156,"class_name":"Blenheim spaniel","constraint_type":"object_interaction","prompt":"a Blenheim spaniel carrying a soft toy"}
+{"class_id":158,"class_name":"toy terrier","constraint_type":"surrounding_context","prompt":"a toy terrier in a bright grooming studio"}
+{"class_id":160,"class_name":"Afghan hound","constraint_type":"action","prompt":"an Afghan hound running at full stride"}
+{"class_id":162,"class_name":"beagle","constraint_type":"spatial_relation","prompt":"a beagle behind a low wooden fence"}
+{"class_id":164,"class_name":"bluetick","constraint_type":"object_interaction","prompt":"a bluetick sniffing an abandoned boot"}
+{"class_id":166,"class_name":"Walker hound","constraint_type":"visual_state","prompt":"a Walker hound with a rain-soaked coat"}
+{"class_id":168,"class_name":"redbone","constraint_type":"surrounding_context","prompt":"a redbone dog on an autumn woodland trail"}
+{"class_id":170,"class_name":"Irish wolfhound","constraint_type":"spatial_relation","prompt":"an Irish wolfhound beside a stone gate"}
+{"class_id":172,"class_name":"whippet","constraint_type":"object_interaction","prompt":"a whippet tugging a cloth toy"}
+{"class_id":174,"class_name":"Norwegian elkhound","constraint_type":"visual_state","prompt":"a Norwegian elkhound with snow-dusted fur"}
+{"class_id":176,"class_name":"Saluki","constraint_type":"action","prompt":"a Saluki sprinting across open ground"}
+{"class_id":178,"class_name":"Weimaraner","constraint_type":"surrounding_context","prompt":"a Weimaraner on a quiet vineyard path"}
+{"class_id":180,"class_name":"American Staffordshire terrier","constraint_type":"object_interaction","prompt":"an American Staffordshire terrier pressing its nose to a tennis ball"}
+{"class_id":182,"class_name":"Border terrier","constraint_type":"visual_state","prompt":"a Border terrier with a mud-spattered coat"}
+{"class_id":184,"class_name":"Irish terrier","constraint_type":"action","prompt":"an Irish terrier shaking its coat"}
+{"class_id":186,"class_name":"Norwich terrier","constraint_type":"spatial_relation","prompt":"a Norwich terrier between garden pots"}
+{"class_id":188,"class_name":"wire-haired fox terrier","constraint_type":"surrounding_context","prompt":"a wire-haired fox terrier in an outdoor agility yard"}
+{"class_id":190,"class_name":"Sealyham terrier","constraint_type":"visual_state","prompt":"a Sealyham terrier with freshly groomed fur"}
+{"class_id":192,"class_name":"cairn","constraint_type":"action","prompt":"a cairn dog digging into loose soil"}
+{"class_id":194,"class_name":"Dandie Dinmont","constraint_type":"spatial_relation","prompt":"a Dandie Dinmont beneath a park bench"}
+{"class_id":196,"class_name":"miniature schnauzer","constraint_type":"object_interaction","prompt":"a miniature schnauzer holding a fallen glove"}
+{"class_id":198,"class_name":"standard schnauzer","constraint_type":"surrounding_context","prompt":"a standard schnauzer in a snow-covered town square"}

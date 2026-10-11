@@ -1,0 +1,60 @@
+task: diffusion_multirobot_planning
+
+data:
+  protocol: conveyor_moderate                            # highways / circle020 / conveyor_moderate / conveyor_hard
+  conditions: tasks/diffusion_multirobot_planning/assets/conditions.jsonl
+  models: tasks/diffusion_multirobot_planning/assets/models.json
+
+reward:
+  temperature: 2.0                                    # Shared log reward: -cost / temperature
+  obstacle_cost_scale: 95.0                           # Segment mean multiplier; formerly ceil(64 * 1.5) - 1
+  weights:
+    collision: 6.0
+    smoothness: 4.0
+    obstacle: 10.0
+
+cs_vgb:
+  forward_size: 2                                     # L_F: full forward pool size
+  backward_size: 2                                    # L_B: full backward pool size
+  depth_alpha: 0.3                                    # Depth weight
+  persistence: 1.0                                    # Suppress direction flips
+  lazy: true                                          # Use opposite marked candidate only
+  skip_stays: true                                    # Shared conditional skipping variant
+  guided: true                                        # Enable the guided proposal path
+  guidance_forward: true                              # Apply configured stages after each DDPM step
+  guidance_backward: false                            # Optional stages after a full renoise jump
+  endpoint_samples: null                              # DDPM proposals do not draw posterior endpoints
+  value_samples: null                                 # One clean prediction per noisy state
+  guidance_samples: null                              # Geometry gradients; no posterior Monte Carlo
+
+guidance:
+  start_fraction: 1.0                                 # Guide when destination level < ceil(fraction * steps)
+  max_grad_norm: 0.375                                # Per-cost, per-waypoint gradient clipping
+  stages:                                             # Repeated inside each guided DDPM step
+    - steps: 20
+      scale: 0.055
+    - steps: 20
+      scale: 0.00275
+
+inference_common:
+  device: cuda:0                                      # CUDA only
+  compile_model: false                                # Compile the diffusion network
+  save_figure: true                                   # Save best.png and vector best.pdf
+  seed: 0
+  condition_index: 0                                  # Row within the selected protocol
+  num_particles: 1                                    # Joint multi-robot particles
+  checkpoint_time_grid: [0, 2, 6]                     # Native levels; clean 0 -> search start 6
+  noise_std_scale: 1.0                                # DDPM noise standard deviation multiplier
+  num_updates: 12288
+  nfe_budget: 16384                                   # Soft cumulative equivalent NFE budget
+  stop_on_feasible: true                              # Stop after an update finds a feasible clean candidate
+  fallback_f_only: true                               # Finish forward if no clean visit; may exceed budget
+  warp_beta: 0.0                                      # No forced warp by default
+  direct_warp: true                                   # Direct warp is unguided
+  output_dir: outputs/planning_inference
+  robot_radius: 0.05
+  duration: 5.0                                       # Trajectory duration
+  safe_distance: 0.12                                 # Soft robot separation threshold
+  obstacle_margin: 0.07                               # Soft obstacle distance threshold
+  workspace_limit: 1.0                                # Coordinates within [-limit, limit]
+  endpoint_tolerance: 1.0e-5

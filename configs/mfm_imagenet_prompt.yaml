@@ -1,0 +1,52 @@
+task: mfm_imagenet_prompt
+
+data:
+  models: tasks/mfm_imagenet_prompt/assets/models.json
+  conditions: tasks/mfm_imagenet_prompt/assets/imagenet_main100.jsonl
+  calibration: tasks/mfm_imagenet_prompt/assets/imagenet_calibration.jsonl
+
+model:
+  posterior_steps: 1                                  # Inner steps per posterior draw
+  use_bfloat16: true                                  # Generator mixed precision
+  batch_size: 16                                      # Latents per model batch
+  cfg_scale: 2.5                                      # Released CFG: 1.0 or 2.5
+
+reward:
+  batch_size: 8                                       # Images per reward batch
+  temperature: 0.5                                    # Calibrated log-reward divisor
+  checkpoint_grad: true                               # Recompute reward activations in backward (to save VRAM; only for guidance)
+
+metric:
+  clip_iqa: true                                      # Final-image quality
+  vqa: true                                           # Final-image prompt alignment
+
+# Small integration setting, not a paper reproduction preset.
+inference_common:
+  device: cuda:0                                      # CUDA device only
+  compile_model: false                                # Compile generator velocity
+  save_image: true                                    # Save best.png
+  seed: 0                                             # Random seed
+  condition_index: 0                                  # Manifest row, zero-based
+  num_particles: 1                                    # N
+  checkpoint_intervals: 4                             # J: uniform grid, clean 0 -> noise 1
+  num_updates: 100000                                 # Maximum updates
+  nfe_budget: 64                                      # Cumulative equivalent NFE
+  fallback_f_only: true                               # Finish forward if no clean visit
+  warp_beta: 0.2                                      # Target ceil(beta * J)
+  direct_warp: false                                  # Forced B steps
+  output_dir: outputs/mfm_inference
+
+cs_vgb:
+  forward_size: 2                                     # L_F
+  backward_size: 2                                    # L_B
+  depth_alpha: 0.3
+  persistence: 1.0
+  lazy: true
+  skip_stays: true                                    # Lazy conditional variant
+  endpoint_samples: 8                                 # m_e: unguided endpoint search
+  value_samples: 1
+  guided: true
+  guidance_forward: 1.75                              # g_F
+  guidance_backward: 1.5                              # g_B
+  guidance_samples: 4                                 # m_g
+  endpoint_mode: fresh                                # reuse / fresh / best

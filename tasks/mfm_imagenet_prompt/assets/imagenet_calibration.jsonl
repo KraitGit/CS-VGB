@@ -1,0 +1,100 @@
+{"prompt": "majestic volcano erupting with lava flowing down its sides", "mean": {"hpsv2": 19.505741119384766}, "std": {"hpsv2": 2.0310473442077637}, "count": 64}
+{"prompt": "space shuttle launching into space, fiery fumes", "mean": {"hpsv2": 22.095491409301758}, "std": {"hpsv2": 2.7932896614074707}, "count": 64}
+{"prompt": "a hammerhead nudging a floating buoy with its snout", "mean": {"hpsv2": 20.646194458007812}, "std": {"hpsv2": 2.0681655406951904}, "count": 64}
+{"prompt": "a stingray partially buried in pale sand", "mean": {"hpsv2": 21.183069229125977}, "std": {"hpsv2": 2.6606414318084717}, "count": 64}
+{"prompt": "a hen in a sunlit farmyard", "mean": {"hpsv2": 22.563634872436523}, "std": {"hpsv2": 2.644679307937622}, "count": 64}
+{"prompt": "a brambling perched on a frosted branch", "mean": {"hpsv2": 22.73548126220703}, "std": {"hpsv2": 2.8664121627807617}, "count": 64}
+{"prompt": "a house finch pulling a seed from a sunflower head", "mean": {"hpsv2": 20.158649444580078}, "std": {"hpsv2": 2.1524369716644287}, "count": 64}
+{"prompt": "an indigo bunting with rain-soaked plumage", "mean": {"hpsv2": 25.273719787597656}, "std": {"hpsv2": 2.847667694091797}, "count": 64}
+{"prompt": "a bulbul taking flight", "mean": {"hpsv2": 23.452173233032227}, "std": {"hpsv2": 1.4388526678085327}, "count": 64}
+{"prompt": "a magpie in a rain-soaked city park", "mean": {"hpsv2": 22.992948532104492}, "std": {"hpsv2": 3.213728904724121}, "count": 64}
+{"prompt": "a water ouzel turning over a stream pebble with its beak", "mean": {"hpsv2": 23.116212844848633}, "std": {"hpsv2": 2.732696771621704}, "count": 64}
+{"prompt": "a bald eagle with its wings fully spread", "mean": {"hpsv2": 20.691471099853516}, "std": {"hpsv2": 3.4174013137817383}, "count": 64}
+{"prompt": "a great grey owl gliding low", "mean": {"hpsv2": 22.905553817749023}, "std": {"hpsv2": 1.8197554349899292}, "count": 64}
+{"prompt": "a common newt between moss-covered stones", "mean": {"hpsv2": 20.30254554748535}, "std": {"hpsv2": 2.53851580619812}, "count": 64}
+{"prompt": "a spotted salamander on a damp forest floor", "mean": {"hpsv2": 22.530418395996094}, "std": {"hpsv2": 2.2445027828216553}, "count": 64}
+{"prompt": "a bullfrog with its throat sac fully inflated", "mean": {"hpsv2": 23.51126480102539}, "std": {"hpsv2": 1.8975903987884521}, "count": 64}
+{"prompt": "a tailed frog leaping from the water", "mean": {"hpsv2": 22.812294006347656}, "std": {"hpsv2": 1.7940980195999146}, "count": 64}
+{"prompt": "a leatherback turtle below the sunlit ocean surface", "mean": {"hpsv2": 17.547494888305664}, "std": {"hpsv2": 3.6471550464630127}, "count": 64}
+{"prompt": "a terrapin biting an aquatic leaf", "mean": {"hpsv2": 21.31801986694336}, "std": {"hpsv2": 2.256842851638794}, "count": 64}
+{"prompt": "a banded gecko in a rocky desert enclosure", "mean": {"hpsv2": 18.613759994506836}, "std": {"hpsv2": 2.401730537414551}, "count": 64}
+{"prompt": "an American chameleon climbing slowly", "mean": {"hpsv2": 20.723037719726562}, "std": {"hpsv2": 2.087890148162842}, "count": 64}
+{"prompt": "an agama atop a sun-warmed rock", "mean": {"hpsv2": 21.235702514648438}, "std": {"hpsv2": 2.752269744873047}, "count": 64}
+{"prompt": "an alligator lizard gripping a twig", "mean": {"hpsv2": 18.239639282226562}, "std": {"hpsv2": 3.0534873008728027}, "count": 64}
+{"prompt": "a green lizard with dew-speckled scales", "mean": {"hpsv2": 22.26273536682129}, "std": {"hpsv2": 2.9664533138275146}, "count": 64}
+{"prompt": "a Komodo dragon in a dry tropical savanna", "mean": {"hpsv2": 21.23021125793457}, "std": {"hpsv2": 2.0555334091186523}, "count": 64}
+{"prompt": "an American alligator beside a muddy riverbank", "mean": {"hpsv2": 20.601083755493164}, "std": {"hpsv2": 2.193588972091675}, "count": 64}
+{"prompt": "a thunder snake nosing aside a dry leaf", "mean": {"hpsv2": 17.79888916015625}, "std": {"hpsv2": 2.1938414573669434}, "count": 64}
+{"prompt": "a hognose snake with its neck flattened defensively", "mean": {"hpsv2": 20.33261489868164}, "std": {"hpsv2": 2.412482738494873}, "count": 64}
+{"prompt": "a king snake crossing a sandy trail", "mean": {"hpsv2": 21.22720718383789}, "std": {"hpsv2": 1.8564448356628418}, "count": 64}
+{"prompt": "a water snake in a reed-filled marsh", "mean": {"hpsv2": 18.333099365234375}, "std": {"hpsv2": 2.332087278366089}, "count": 64}
+{"prompt": "a night snake curling around a fallen twig", "mean": {"hpsv2": 21.24697494506836}, "std": {"hpsv2": 2.517106533050537}, "count": 64}
+{"prompt": "a rock python with freshly shed glossy scales", "mean": {"hpsv2": 17.7479248046875}, "std": {"hpsv2": 2.3584249019622803}, "count": 64}
+{"prompt": "a green mamba moving through branches", "mean": {"hpsv2": 23.24367332458496}, "std": {"hpsv2": 2.1771109104156494}, "count": 64}
+{"prompt": "a horned viper beneath a desert shrub", "mean": {"hpsv2": 17.260852813720703}, "std": {"hpsv2": 2.345078706741333}, "count": 64}
+{"prompt": "a sidewinder on a wind-rippled desert floor", "mean": {"hpsv2": 18.842479705810547}, "std": {"hpsv2": 1.738693118095398}, "count": 64}
+{"prompt": "a harvestman with dew beaded along its legs", "mean": {"hpsv2": 20.47813606262207}, "std": {"hpsv2": 2.6496119499206543}, "count": 64}
+{"prompt": "a black and gold garden spider descending on a silk thread", "mean": {"hpsv2": 23.468420028686523}, "std": {"hpsv2": 1.8358889818191528}, "count": 64}
+{"prompt": "a garden spider at the center of a dew-covered web", "mean": {"hpsv2": 24.056663513183594}, "std": {"hpsv2": 2.098548173904419}, "count": 64}
+{"prompt": "a tarantula touching a dry leaf with its front legs", "mean": {"hpsv2": 23.342369079589844}, "std": {"hpsv2": 2.5370965003967285}, "count": 64}
+{"prompt": "a tick on a veterinary examination tray", "mean": {"hpsv2": 18.503692626953125}, "std": {"hpsv2": 2.2362377643585205}, "count": 64}
+{"prompt": "a black grouse launching into flight", "mean": {"hpsv2": 22.641172409057617}, "std": {"hpsv2": 1.9344922304153442}, "count": 64}
+{"prompt": "a ruffed grouse beside a fallen log", "mean": {"hpsv2": 19.42877197265625}, "std": {"hpsv2": 2.825345516204834}, "count": 64}
+{"prompt": "a peacock pecking at a fallen berry", "mean": {"hpsv2": 22.202972412109375}, "std": {"hpsv2": 2.3771674633026123}, "count": 64}
+{"prompt": "a partridge with rain-ruffled feathers", "mean": {"hpsv2": 22.807708740234375}, "std": {"hpsv2": 3.046611785888672}, "count": 64}
+{"prompt": "a macaw in a lush rainforest canopy", "mean": {"hpsv2": 24.184349060058594}, "std": {"hpsv2": 2.827458381652832}, "count": 64}
+{"prompt": "a lorikeet perched beneath a palm frond", "mean": {"hpsv2": 24.003734588623047}, "std": {"hpsv2": 2.0317347049713135}, "count": 64}
+{"prompt": "a bee eater tossing a captured insect in its beak", "mean": {"hpsv2": 19.3812198638916}, "std": {"hpsv2": 2.692988872528076}, "count": 64}
+{"prompt": "a hummingbird with iridescent throat feathers catching the light", "mean": {"hpsv2": 23.261796951293945}, "std": {"hpsv2": 2.6455304622650146}, "count": 64}
+{"prompt": "a toucan hopping along a branch", "mean": {"hpsv2": 23.975143432617188}, "std": {"hpsv2": 2.453927993774414}, "count": 64}
+{"prompt": "a red-breasted merganser on a misty coastal lagoon", "mean": {"hpsv2": 23.01841926574707}, "std": {"hpsv2": 3.2382864952087402}, "count": 64}
+{"prompt": "a black swan pulling at submerged pondweed", "mean": {"hpsv2": 24.17418670654297}, "std": {"hpsv2": 2.333716630935669}, "count": 64}
+{"prompt": "an echidna with mud-coated spines", "mean": {"hpsv2": 25.00288200378418}, "std": {"hpsv2": 2.5309722423553467}, "count": 64}
+{"prompt": "a wallaby bounding forward", "mean": {"hpsv2": 22.34054183959961}, "std": {"hpsv2": 2.6411855220794678}, "count": 64}
+{"prompt": "a wombat at the entrance of an earthen burrow", "mean": {"hpsv2": 22.601028442382812}, "std": {"hpsv2": 1.9989278316497803}, "count": 64}
+{"prompt": "a sea anemone in a shallow coral reef", "mean": {"hpsv2": 23.174907684326172}, "std": {"hpsv2": 2.232609987258911}, "count": 64}
+{"prompt": "a flatworm with its body visibly rippled", "mean": {"hpsv2": 23.186309814453125}, "std": {"hpsv2": 1.759338617324829}, "count": 64}
+{"prompt": "a conch crawling across the seafloor", "mean": {"hpsv2": 20.29100227355957}, "std": {"hpsv2": 2.306516170501709}, "count": 64}
+{"prompt": "a slug beneath a broad leaf", "mean": {"hpsv2": 19.90816879272461}, "std": {"hpsv2": 2.077331066131592}, "count": 64}
+{"prompt": "a chiton clinging tightly to a wave-washed stone", "mean": {"hpsv2": 22.751354217529297}, "std": {"hpsv2": 1.606884241104126}, "count": 64}
+{"prompt": "a Dungeness crab in a rocky tidal pool", "mean": {"hpsv2": 19.996850967407227}, "std": {"hpsv2": 2.257509708404541}, "count": 64}
+{"prompt": "a fiddler crab scuttling sideways", "mean": {"hpsv2": 21.30510902404785}, "std": {"hpsv2": 2.7094438076019287}, "count": 64}
+{"prompt": "an American lobster inside a rocky crevice", "mean": {"hpsv2": 20.705570220947266}, "std": {"hpsv2": 1.9909608364105225}, "count": 64}
+{"prompt": "a crayfish gripping a water plant with its claw", "mean": {"hpsv2": 20.006210327148438}, "std": {"hpsv2": 2.612231492996216}, "count": 64}
+{"prompt": "an isopod rolled into a tight ball", "mean": {"hpsv2": 21.979633331298828}, "std": {"hpsv2": 2.3863093852996826}, "count": 64}
+{"prompt": "a black stork in a foggy wetland", "mean": {"hpsv2": 22.036161422729492}, "std": {"hpsv2": 2.880709409713745}, "count": 64}
+{"prompt": "a flamingo among tall reeds", "mean": {"hpsv2": 23.562454223632812}, "std": {"hpsv2": 1.830589771270752}, "count": 64}
+{"prompt": "an American egret lifting a twig from the water", "mean": {"hpsv2": 21.30437660217285}, "std": {"hpsv2": 2.654663562774658}, "count": 64}
+{"prompt": "a crane bird with its wings outstretched", "mean": {"hpsv2": 21.365325927734375}, "std": {"hpsv2": 2.065202236175537}, "count": 64}
+{"prompt": "a European gallinule stepping over floating leaves", "mean": {"hpsv2": 21.596046447753906}, "std": {"hpsv2": 2.353475570678711}, "count": 64}
+{"prompt": "a bustard on open steppe grassland", "mean": {"hpsv2": 22.635196685791016}, "std": {"hpsv2": 3.0382163524627686}, "count": 64}
+{"prompt": "a red-backed sandpiper probing wet sand with its beak", "mean": {"hpsv2": 24.77294921875}, "std": {"hpsv2": 2.8428027629852295}, "count": 64}
+{"prompt": "a dowitcher with rain-darkened feathers", "mean": {"hpsv2": 23.448936462402344}, "std": {"hpsv2": 3.284926414489746}, "count": 64}
+{"prompt": "a pelican diving toward the water", "mean": {"hpsv2": 22.91200828552246}, "std": {"hpsv2": 2.3393712043762207}, "count": 64}
+{"prompt": "an albatross above rolling waves", "mean": {"hpsv2": 22.21109962463379}, "std": {"hpsv2": 3.1087241172790527}, "count": 64}
+{"prompt": "a killer whale in a cold ocean channel", "mean": {"hpsv2": 22.84980583190918}, "std": {"hpsv2": 2.163025379180908}, "count": 64}
+{"prompt": "a sea lion with wet whiskers glistening", "mean": {"hpsv2": 19.40186882019043}, "std": {"hpsv2": 3.582338809967041}, "count": 64}
+{"prompt": "a Japanese spaniel trotting forward", "mean": {"hpsv2": 19.011802673339844}, "std": {"hpsv2": 2.0159783363342285}, "count": 64}
+{"prompt": "a Pekinese seated beside a velvet cushion", "mean": {"hpsv2": 18.48769760131836}, "std": {"hpsv2": 2.0338168144226074}, "count": 64}
+{"prompt": "a Blenheim spaniel carrying a soft toy", "mean": {"hpsv2": 19.24555206298828}, "std": {"hpsv2": 1.8569324016571045}, "count": 64}
+{"prompt": "a toy terrier in a bright grooming studio", "mean": {"hpsv2": 17.869915008544922}, "std": {"hpsv2": 2.523422956466675}, "count": 64}
+{"prompt": "an Afghan hound running at full stride", "mean": {"hpsv2": 19.166597366333008}, "std": {"hpsv2": 1.57364821434021}, "count": 64}
+{"prompt": "a beagle behind a low wooden fence", "mean": {"hpsv2": 18.08333969116211}, "std": {"hpsv2": 2.2323555946350098}, "count": 64}
+{"prompt": "a bluetick sniffing an abandoned boot", "mean": {"hpsv2": 19.414541244506836}, "std": {"hpsv2": 1.9378591775894165}, "count": 64}
+{"prompt": "a Walker hound with a rain-soaked coat", "mean": {"hpsv2": 18.536060333251953}, "std": {"hpsv2": 2.300703763961792}, "count": 64}
+{"prompt": "a redbone dog on an autumn woodland trail", "mean": {"hpsv2": 17.303119659423828}, "std": {"hpsv2": 2.078101396560669}, "count": 64}
+{"prompt": "an Irish wolfhound beside a stone gate", "mean": {"hpsv2": 18.450416564941406}, "std": {"hpsv2": 2.151620626449585}, "count": 64}
+{"prompt": "a whippet tugging a cloth toy", "mean": {"hpsv2": 18.966934204101562}, "std": {"hpsv2": 1.446136474609375}, "count": 64}
+{"prompt": "a Norwegian elkhound with snow-dusted fur", "mean": {"hpsv2": 19.319141387939453}, "std": {"hpsv2": 2.5490455627441406}, "count": 64}
+{"prompt": "a Saluki sprinting across open ground", "mean": {"hpsv2": 20.6468563079834}, "std": {"hpsv2": 2.1421687602996826}, "count": 64}
+{"prompt": "a Weimaraner on a quiet vineyard path", "mean": {"hpsv2": 18.560977935791016}, "std": {"hpsv2": 2.3908770084381104}, "count": 64}
+{"prompt": "an American Staffordshire terrier pressing its nose to a tennis ball", "mean": {"hpsv2": 20.137510299682617}, "std": {"hpsv2": 2.100858211517334}, "count": 64}
+{"prompt": "a Border terrier with a mud-spattered coat", "mean": {"hpsv2": 22.3704891204834}, "std": {"hpsv2": 2.3763983249664307}, "count": 64}
+{"prompt": "an Irish terrier shaking its coat", "mean": {"hpsv2": 22.524105072021484}, "std": {"hpsv2": 2.279633045196533}, "count": 64}
+{"prompt": "a Norwich terrier between garden pots", "mean": {"hpsv2": 19.26410484313965}, "std": {"hpsv2": 2.3365907669067383}, "count": 64}
+{"prompt": "a wire-haired fox terrier in an outdoor agility yard", "mean": {"hpsv2": 18.187255859375}, "std": {"hpsv2": 2.675361156463623}, "count": 64}
+{"prompt": "a Sealyham terrier with freshly groomed fur", "mean": {"hpsv2": 20.04611587524414}, "std": {"hpsv2": 2.4570600986480713}, "count": 64}
+{"prompt": "a cairn dog digging into loose soil", "mean": {"hpsv2": 19.666168212890625}, "std": {"hpsv2": 1.5896964073181152}, "count": 64}
+{"prompt": "a Dandie Dinmont beneath a park bench", "mean": {"hpsv2": 17.633743286132812}, "std": {"hpsv2": 1.7030766010284424}, "count": 64}
+{"prompt": "a miniature schnauzer holding a fallen glove", "mean": {"hpsv2": 21.253433227539062}, "std": {"hpsv2": 1.9198781251907349}, "count": 64}
+{"prompt": "a standard schnauzer in a snow-covered town square", "mean": {"hpsv2": 19.39630126953125}, "std": {"hpsv2": 2.226667642593384}, "count": 64}

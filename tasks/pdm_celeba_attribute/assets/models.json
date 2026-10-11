@@ -1,0 +1,11 @@
+{
+  "model": {
+    "repo_id": "MonkeyDoug/diamond-maps",
+    "revision": "86c36a065859400d348616859989a43b79a53892",
+    "filename": "ckpt/CelebA-DiamondMap.pkl"
+  },
+  "reward_urls": {
+    "detector_checkpoint": "https://github.com/elliottzheng/face-detection/releases/download/0.0.1/mobilenet0.25_Final.pth",
+    "attribute_checkpoint": "https://github.com/FacePerceiver/facer/releases/download/models-v1/face_attribute.farl.celeba.pt"
+  }
+}

@@ -1,0 +1,48 @@
+task: pdm_celeba_attribute                            # Task name
+
+data:
+  models: tasks/pdm_celeba_attribute/assets/models.json
+  conditions: tasks/pdm_celeba_attribute/assets/celeba_l10_main100.jsonl
+
+model:
+  batch_size: 32                                      # Images per generator batch
+  posterior_steps: 1                                  # Inner steps per posterior draw
+  use_bfloat16: true                                  # Generator mixed precision
+
+reward:
+  batch_size: 32                                      # Images per reward batch
+  temperature: 1.0                                    # Log-reward divisor
+
+metric:
+  clip_iqa: true                                      # Final-image quality
+  vqa: true                                           # Final-image prompt alignment
+
+inference_common:
+  device: cuda:0                                      # CUDA device only
+  compile_model: false                                # Compile generator network
+  save_image: true                                    # Save best.png
+  seed: 0                                             # Random seed
+  condition_index: 0                                  # attribute condition row number
+  num_particles: 8                                    # N: the number of particles
+  checkpoint_intervals: 16                            # J: uniform grid, clean 0 -> noise 1
+  num_updates: 100000                                 # Maximum updates
+  nfe_budget: 4096                                    # Cumulative equivalent NFE; null disables
+  fallback_f_only: true                               # Finish forward if no clean visit
+  warp_beta: 0.2                                      # Target ceil(beta * J); 0 disables
+  direct_warp: false                                  # true: jump; false: forced B steps
+  output_dir: outputs/pdm_inference                  # Run output directory
+
+cs_vgb:
+  forward_size: 4                                     # L_F: full forward pool size
+  backward_size: 4                                    # L_B: full backward pool size
+  depth_alpha: 0.3                                    # alpha: depth weight; <1 favors F
+  persistence: 1.0                                    # chi: suppress direction flips
+  lazy: true                                          # Use opposite marked candidate only
+  skip_stays: true                                    # Remove stays; lazy uses conditional variant
+  endpoint_samples: 8                                 # m_e: endpoints per parent, unguided search
+  value_samples: 1                                    # MC draws per value estimate
+  guided: false                                       # Enable guided proposal path
+  guidance_forward: 0.0                               # g_F: forward guidance strength
+  guidance_backward: 0.0                              # g_B: backward guidance strength
+  guidance_samples: 1                                 # m_g: posterior draws for gradient
+  endpoint_mode: reuse                                # reuse: first; fresh: new; best: per-parent max

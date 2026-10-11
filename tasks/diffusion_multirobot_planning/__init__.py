@@ -1,0 +1,1 @@
+"""Diffusion multi-robot planning."""

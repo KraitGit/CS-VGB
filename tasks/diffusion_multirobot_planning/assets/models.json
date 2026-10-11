@@ -1,0 +1,116 @@
+{
+  "highways": {
+    "model_id": "EnvHighways2D-RobotPlanarDisk",
+    "settings": {
+      "include_velocity": true,
+      "unet_input_dim": 32,
+      "unet_dim_mults_option": 0,
+      "variance_schedule": "exponential",
+      "n_diffusion_steps": 25,
+      "predict_epsilon": true
+    },
+    "normalizer": {
+      "mins": [
+        -0.9752081036567688,
+        -0.9752177000045776,
+        -1.2719300985336304,
+        -1.284109354019165
+      ],
+      "maxs": [
+        0.9752498269081116,
+        0.9752358794212341,
+        1.3063583374023438,
+        1.4049001932144165
+      ],
+      "horizon": 64
+    },
+    "checkpoint_sha256": "ec2f16d9b173ed77644b3ceeb8a9e1a788eec697fb7c1720d645e6549bcb02fe"
+  },
+  "circle020": {
+    "model_id": "EnvEmpty2D-RobotPlanarDisk",
+    "settings": {
+      "include_velocity": true,
+      "unet_input_dim": 32,
+      "unet_dim_mults_option": 1,
+      "variance_schedule": "exponential",
+      "n_diffusion_steps": 25,
+      "predict_epsilon": true
+    },
+    "normalizer": {
+      "mins": [
+        -0.9606975317001343,
+        -0.9320806264877319,
+        -0.05277138948440552,
+        -0.05384993553161621
+      ],
+      "maxs": [
+        0.9319950342178345,
+        0.9156301021575928,
+        0.052193284034729004,
+        0.05304121971130371
+      ],
+      "horizon": 64,
+      "trajectories": 20,
+      "files": 20
+    },
+    "checkpoint_sha256": "e461a013971add07290bea58ec0e422019106a998338d01373cce23fae4f325c"
+  },
+  "conveyor_moderate": {
+    "model_id": "EnvConveyor2D-RobotPlanarDisk",
+    "settings": {
+      "include_velocity": true,
+      "unet_input_dim": 32,
+      "unet_dim_mults_option": 1,
+      "variance_schedule": "exponential",
+      "n_diffusion_steps": 25,
+      "predict_epsilon": true
+    },
+    "normalizer": {
+      "mins": [
+        -0.9474023580551147,
+        -0.9471709132194519,
+        -3.2822318077087402,
+        -2.0037760734558105
+      ],
+      "maxs": [
+        0.9472891092300415,
+        0.9472224712371826,
+        3.433065414428711,
+        2.008955955505371
+      ],
+      "horizon": 64,
+      "trajectories": 10000,
+      "files": 500
+    },
+    "checkpoint_sha256": "43266a63347ab435f00ab0c2e6d05de513f9ecbe01e745cd146e8086884fa07a"
+  },
+  "conveyor_hard": {
+    "model_id": "EnvConveyor2D-RobotPlanarDisk",
+    "settings": {
+      "include_velocity": true,
+      "unet_input_dim": 32,
+      "unet_dim_mults_option": 1,
+      "variance_schedule": "exponential",
+      "n_diffusion_steps": 25,
+      "predict_epsilon": true
+    },
+    "normalizer": {
+      "mins": [
+        -0.9474023580551147,
+        -0.9471709132194519,
+        -3.2822318077087402,
+        -2.0037760734558105
+      ],
+      "maxs": [
+        0.9472891092300415,
+        0.9472224712371826,
+        3.433065414428711,
+        2.008955955505371
+      ],
+      "horizon": 64,
+      "trajectories": 10000,
+      "files": 500
+    },
+    "checkpoint_sha256": "43266a63347ab435f00ab0c2e6d05de513f9ecbe01e745cd146e8086884fa07a"
+  }
+}

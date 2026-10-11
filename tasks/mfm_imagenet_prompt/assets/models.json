@@ -1,0 +1,20 @@
+{
+  "model": {
+    "repo_id": "adh1s/mfm",
+    "revision": "f71b0897938e3233002edebbb016a31f9af03f0c",
+    "filename": "mfm-xl2.pt"
+  },
+  "vae": {
+    "repo_id": "stabilityai/sd-vae-ft-mse",
+    "revision": "31f26fdeee1355a5c34592e401dd41e45d25a493",
+    "allow_patterns": [
+      "config.json",
+      "diffusion_pytorch_model.safetensors"
+    ]
+  },
+  "reward": {
+    "repo_id": "xswu/HPSv2",
+    "revision": "697403c78157020a1ae59d23f111aa58ced35b0a",
+    "filename": "HPS_v2.1_compressed.pt"
+  }
+}

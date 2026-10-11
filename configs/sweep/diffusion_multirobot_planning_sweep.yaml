@@ -1,0 +1,21 @@
+config: configs/diffusion_multirobot_planning.yaml
+protocols: [highways, circle020, conveyor_moderate, conveyor_hard]
+num_conditions: 64                    # First N maps per protocol
+num_repeats: 5                        # First N frozen seeds per map
+output_dir: outputs/planning_sweep
+inference_common:
+  save_figure: true                   # Save best.png and best.pdf per run
+methods:
+  guided:
+    cs_vgb:
+      guided: true
+      guidance_forward: true
+      guidance_backward: false
+    presets:                         # Other settings inherit the single-run YAML
+      512: {}
+      1024: {}
+      2048: {}
+      4096: {}
+      8192: {}
+      12288: {}
+      16384: {}

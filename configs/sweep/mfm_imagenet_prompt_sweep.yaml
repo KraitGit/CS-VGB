@@ -1,0 +1,267 @@
+config: configs/mfm_imagenet_prompt.yaml
+num_conditions: 100
+output_dir: outputs/mfm_sweep
+inference_common:
+  num_updates: 100000
+  fallback_f_only: true
+  warp_beta: 0.2
+  direct_warp: false
+cs_vgb:
+  persistence: 1.0
+  lazy: true
+  skip_stays: true
+  depth_alpha: 0.3
+  value_samples: 1
+methods:
+  search:
+    cs_vgb:
+      guided: false
+      endpoint_mode: reuse
+    presets:
+      1433:
+        inference_common:
+          num_particles: 4
+          checkpoint_intervals: 16
+        cs_vgb:
+          forward_size: 4
+          backward_size: 4
+          endpoint_samples: 8
+          guidance_forward: 0.0
+          guidance_backward: 0.0
+          guidance_samples: 4
+      2037:
+        inference_common:
+          num_particles: 4
+          checkpoint_intervals: 16
+        cs_vgb:
+          forward_size: 4
+          backward_size: 4
+          endpoint_samples: 16
+          guidance_forward: 0.0
+          guidance_backward: 0.0
+          guidance_samples: 4
+      3975:
+        inference_common:
+          num_particles: 4
+          checkpoint_intervals: 16
+        cs_vgb:
+          forward_size: 4
+          backward_size: 4
+          endpoint_samples: 32
+          guidance_forward: 0.0
+          guidance_backward: 0.0
+          guidance_samples: 4
+      6230:
+        inference_common:
+          num_particles: 8
+          checkpoint_intervals: 16
+        cs_vgb:
+          forward_size: 4
+          backward_size: 4
+          endpoint_samples: 24
+          guidance_forward: 0.0
+          guidance_backward: 0.0
+          guidance_samples: 4
+      7956:
+        inference_common:
+          num_particles: 8
+          checkpoint_intervals: 16
+        cs_vgb:
+          forward_size: 4
+          backward_size: 4
+          endpoint_samples: 32
+          guidance_forward: 0.0
+          guidance_backward: 0.0
+          guidance_samples: 4
+      10623:
+        inference_common:
+          num_particles: 8
+          checkpoint_intervals: 32
+        cs_vgb:
+          forward_size: 4
+          backward_size: 4
+          endpoint_samples: 24
+          guidance_forward: 0.0
+          guidance_backward: 0.0
+          guidance_samples: 4
+      12767:
+        inference_common:
+          num_particles: 8
+          checkpoint_intervals: 32
+        cs_vgb:
+          forward_size: 4
+          backward_size: 4
+          endpoint_samples: 24
+          guidance_forward: 0.0
+          guidance_backward: 0.0
+          guidance_samples: 4
+      16827:
+        inference_common:
+          num_particles: 8
+          checkpoint_intervals: 32
+        cs_vgb:
+          forward_size: 4
+          backward_size: 4
+          endpoint_samples: 24
+          guidance_forward: 0.0
+          guidance_backward: 0.0
+          guidance_samples: 4
+      21716:
+        inference_common:
+          num_particles: 8
+          checkpoint_intervals: 64
+        cs_vgb:
+          forward_size: 4
+          backward_size: 4
+          endpoint_samples: 24
+          guidance_forward: 0.0
+          guidance_backward: 0.0
+          guidance_samples: 4
+      25859:
+        inference_common:
+          num_particles: 8
+          checkpoint_intervals: 64
+        cs_vgb:
+          forward_size: 4
+          backward_size: 4
+          endpoint_samples: 24
+          guidance_forward: 0.0
+          guidance_backward: 0.0
+          guidance_samples: 4
+      34333:
+        inference_common:
+          num_particles: 8
+          checkpoint_intervals: 64
+        cs_vgb:
+          forward_size: 4
+          backward_size: 4
+          endpoint_samples: 24
+          guidance_forward: 0.0
+          guidance_backward: 0.0
+          guidance_samples: 4
+      64954:
+        inference_common:
+          num_particles: 8
+          checkpoint_intervals: 64
+        cs_vgb:
+          forward_size: 4
+          backward_size: 4
+          endpoint_samples: 24
+          guidance_forward: 0.0
+          guidance_backward: 0.0
+          guidance_samples: 4
+      131029:
+        inference_common:
+          num_particles: 16
+          checkpoint_intervals: 64
+        cs_vgb:
+          forward_size: 4
+          backward_size: 4
+          endpoint_samples: 52
+          guidance_forward: 0.0
+          guidance_backward: 0.0
+          guidance_samples: 4
+  guided:
+    cs_vgb:
+      guided: true
+      endpoint_mode: fresh
+    presets:
+      512:
+        inference_common:
+          num_particles: 1
+          checkpoint_intervals: 95
+        cs_vgb:
+          forward_size: 1
+          backward_size: 1
+          endpoint_samples: 8
+          guidance_forward: 3.5
+          guidance_backward: 1.0
+          guidance_samples: 1
+      1024:
+        inference_common:
+          num_particles: 1
+          checkpoint_intervals: 79
+        cs_vgb:
+          forward_size: 1
+          backward_size: 1
+          endpoint_samples: 8
+          guidance_forward: 4.0
+          guidance_backward: 1.5
+          guidance_samples: 2
+      2048:
+        inference_common:
+          num_particles: 1
+          checkpoint_intervals: 64
+        cs_vgb:
+          forward_size: 1
+          backward_size: 1
+          endpoint_samples: 8
+          guidance_forward: 2.0
+          guidance_backward: 1.5
+          guidance_samples: 4
+      4096:
+        inference_common:
+          num_particles: 1
+          checkpoint_intervals: 64
+        cs_vgb:
+          forward_size: 1
+          backward_size: 1
+          endpoint_samples: 8
+          guidance_forward: 1.75
+          guidance_backward: 1.5
+          guidance_samples: 4
+      8192:
+        inference_common:
+          num_particles: 1
+          checkpoint_intervals: 64
+        cs_vgb:
+          forward_size: 4
+          backward_size: 4
+          endpoint_samples: 8
+          guidance_forward: 2.0
+          guidance_backward: 1.5
+          guidance_samples: 8
+      10000:
+        inference_common:
+          num_particles: 1
+          checkpoint_intervals: 64
+        cs_vgb:
+          forward_size: 4
+          backward_size: 4
+          endpoint_samples: 8
+          guidance_forward: 2.0
+          guidance_backward: 1.5
+          guidance_samples: 8
+      19609:
+        inference_common:
+          num_particles: 1
+          checkpoint_intervals: 128
+        cs_vgb:
+          forward_size: 8
+          backward_size: 8
+          endpoint_samples: 8
+          guidance_forward: 3.0
+          guidance_backward: 2.0
+          guidance_samples: 16
+      42362:
+        inference_common:
+          num_particles: 1
+          checkpoint_intervals: 129
+        cs_vgb:
+          forward_size: 16
+          backward_size: 8
+          endpoint_samples: 8
+          guidance_forward: 3.5
+          guidance_backward: 2.0
+          guidance_samples: 16
+      65536:
+        inference_common:
+          num_particles: 1
+          checkpoint_intervals: 129
+        cs_vgb:
+          forward_size: 16
+          backward_size: 8
+          endpoint_samples: 8
+          guidance_forward: 3.5
+          guidance_backward: 2.0
+          guidance_samples: 16
