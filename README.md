@@ -88,6 +88,19 @@ We thank the authors and maintainers of the following code and pretrained models
 - **Planning:** [MMD](https://github.com/yoraish/mmd), including its released diffusion checkpoints.
 - **Rewards and evaluation:** [FACER](https://github.com/FacePerceiver/facer), [FaRL](https://github.com/FacePerceiver/FaRL), [RetinaFace weights](https://github.com/elliottzheng/face-detection), [HPSv2 weights](https://huggingface.co/xswu/HPSv2), [OpenCLIP](https://github.com/mlfoundations/open_clip), [CLIP-IQA](https://github.com/IceClear/CLIP-IQA), [TorchMetrics](https://github.com/Lightning-AI/torchmetrics), and [Qwen2.5-VL](https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct).
 
+## Citation
+
+If you find this code useful, please cite our paper:
+
+```bibtex
+@article{jeon2026imperfect,
+  title={Imperfect Verifiers, Exact Targets: Inference-Time Scaling for Continuous Generation},
+  author={Jeon, Kijung and Tao, Molei},
+  journal={arXiv preprint arXiv:2610.15281},
+  year={2026},
+  url={https://arxiv.org/abs/2610.15281}
+}
+```
 
 ## License
 
