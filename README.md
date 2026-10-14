@@ -90,8 +90,6 @@ We thank the authors and maintainers of the following code and pretrained models
 
 ## Citation
 
-If you find this code useful, please cite our paper:
-
 ```bibtex
 @article{jeon2026imperfect,
   title={Imperfect Verifiers, Exact Targets: Inference-Time Scaling for Continuous Generation},
